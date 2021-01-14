@@ -31,6 +31,11 @@
             </e>
           </e>
         </e>
+        <e p="Scripts" t="Include">
+          <e p="ActivateShield.cs" t="Include" />
+          <e p="Diamond.cs" t="Include" />
+          <e p="ShieldToActivateDoor.cs" t="Include" />
+        </e>
       </e>
       <e p="CelesteLD.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

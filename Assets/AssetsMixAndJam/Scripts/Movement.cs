@@ -26,12 +26,12 @@ public class Movement : MonoBehaviour
     public bool wallJumped;
     public bool wallSlide;
     public bool isDashing;
+    public bool hasDashed;
 
     [Space]
 
     private bool groundTouch;
-    private bool hasDashed;
-
+    
     public int side = 1;
 
     [Space]
