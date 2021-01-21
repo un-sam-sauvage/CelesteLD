@@ -1,34 +1,29 @@
 ﻿using System;
-using System.Collections;
 using UnityEngine;
 
 public class Cloud : MonoBehaviour
 {
-    private bool _playerHere = false;
+    public Animator animator;
+    private bool _bigJump = false;
+    public GameObject player;
     private void OnCollisionEnter2D(Collision2D other)
     {
-        _playerHere = true;
-        if (_playerHere)
-        {
-            StartCoroutine(CloudMove());
-            _playerHere = false;
-        }
+        animator.SetBool("CloudCanMove", true);
+        player = other.gameObject;
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        new WaitForSeconds(.5f);
-        _playerHere = true;
+        animator.SetBool("CloudCanMove", false);
     }
 
-    IEnumerator CloudMove()
+    public void BigJumpTrue()
     {
-        
-        gameObject.transform.Translate(new Vector3(0, -1, 0));
-        yield return new WaitForSeconds(.4f);
-        gameObject.transform.Translate(new Vector3(0, 1, 0));
-        yield return new WaitForSeconds(.4f);
-        Debug.Log("big jump");
-        
+        player.GetComponent<Movement>().jumpForce += 10;
+    }
+
+    public void BigJumpFalse()
+    {
+        player.GetComponent<Movement>().jumpForce -= 10;
     }
 }
