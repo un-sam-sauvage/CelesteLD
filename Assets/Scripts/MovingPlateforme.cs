@@ -7,7 +7,8 @@ public class MovingPlateforme : MonoBehaviour
 {
     private Transform platform;
     public Transform player;
-
+    [SerializeField]
+    private float delay = 1.5f;
     [Header("Paramètres")]
     public float posStart = 3;
     public float posEnd = 3;
@@ -20,12 +21,19 @@ public class MovingPlateforme : MonoBehaviour
         mySequence.AppendCallback(Reloop);
     }
 
-    public void OnCollisionEnter2D(Collision2D other)
+    public void OnCollisionStay2D(Collision2D other)
     {
         if (other.collider.CompareTag("Player"))
         {
-            player.transform.SetParent(platform.transform);
-            Debug.Log("Heloo");
+            delay -= Time.deltaTime;
+            if (delay <= 0)
+            {
+                player.transform.SetParent(platform.transform);
+                Debug.Log("Heloo");
+                delay = Mathf.Clamp(delay, 0, Mathf.Infinity);
+            }
+         
+            
         }
     }
 
@@ -34,8 +42,13 @@ public class MovingPlateforme : MonoBehaviour
         if (other.collider.CompareTag("Player"))
         {
             player.transform.SetParent(null);
+            Debug.Log("Heloo");
         }
+
+        delay = 1;
     }
+
+  
     public void Reloop()
     {
         Sequence mySequence1 = DOTween.Sequence();
