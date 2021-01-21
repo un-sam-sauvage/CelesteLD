@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class CameraMenu : MonoBehaviour
 {
-    [Tooltip("levels 0 = 1er niveau")]public GameObject[] levels;
-    public int levelNumber;
+    [Tooltip("level 0 = 1er niveau")]public GameObject[] levels;
 
-    public void ChooseLevel()
+    public void ChooseLevel(int levelNumber)
     {
         switch (levelNumber)
         {
