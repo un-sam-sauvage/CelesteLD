@@ -45,7 +45,7 @@ public class MovingPlateforme : MonoBehaviour
             Debug.Log("Heloo");
         }
 
-        delay = 1;
+        delay = 0.5f;
     }
 
   
