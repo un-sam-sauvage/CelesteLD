@@ -15,7 +15,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ActivateShield.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShieldToActivateDoor.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Diamond.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovingPlateforme.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Assets/AssetsMixAndJam/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pics.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -24,11 +28,15 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ShieldToActivateDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActivateShield.cs" />
-        <option value="$PROJECT_DIR$/Assets/AssetsMixAndJam/Scripts/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Diamond.cs" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Assets/Scripts/SnowBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMenu.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/AssetsMixAndJam/Scripts/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovingPlateforme.cs" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
