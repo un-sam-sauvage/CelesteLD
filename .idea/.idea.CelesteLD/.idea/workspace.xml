@@ -23,15 +23,22 @@
   <component name="HighlightingSettingsPerFile">
 <<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SnowBall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Old Projects/Fpally Bird/Fpally Bird/Fpally Bird 2D/Assets/Scripts/Menu/PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ActivateShield.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShieldToActivateDoor.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< HEAD
+    <setting file="file://$PROJECT_DIR$/../../Old Projects/Decharge/la-decharge/Assets/Scripts/Menu/MenuPause.cs" root0="SKIP_HIGHLIGHTING" />
+=======
 <<<<<<< Updated upstream
+>>>>>>> main
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Diamond.cs" root0="FORCE_HIGHLIGHTING" />
 =======
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovingPlateforme.cs" root0="FORCE_HIGHLIGHTING" />
 >>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Assets/AssetsMixAndJam/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pics.cs" root0="FORCE_HIGHLIGHTING" />
 =======
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShieldToActivateDoor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,6 +57,8 @@
 <<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Assets/Scripts/SnowBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraMenu.cs" />
 =======
         <option value="$PROJECT_DIR$/Assets/AssetsMixAndJam/Scripts/Movement.cs" />
@@ -128,11 +137,15 @@
       <option name="presentableId" value="Default" />
       <updated>1610619179625</updated>
       <workItem from="1610619194542" duration="2380000" />
+<<<<<<< HEAD
+      <workItem from="1611217551031" duration="2869000" />
+=======
 <<<<<<< Updated upstream
       <workItem from="1611217551031" duration="1974000" />
 =======
       <workItem from="1611219300435" duration="1937000" />
 >>>>>>> Stashed changes
+>>>>>>> main
     </task>
     <servers />
   </component>
