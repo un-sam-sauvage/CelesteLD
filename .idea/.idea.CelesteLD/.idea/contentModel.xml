@@ -33,6 +33,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ActivateShield.cs" t="Include" />
+          <e p="CameraMenu.cs" t="Include" />
           <e p="Diamond.cs" t="Include" />
           <e p="Pics.cs" t="Include" />
           <e p="ShieldToActivateDoor.cs" t="Include" />
