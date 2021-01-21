@@ -39,7 +39,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ActivateShield.cs" t="Include" />
+<<<<<<< Updated upstream
           <e p="CameraMenu.cs" t="Include" />
+=======
+          <e p="Cloud.cs" t="Include" />
+>>>>>>> Stashed changes
           <e p="Diamond.cs" t="Include" />
 <<<<<<< Updated upstream
           <e p="Pics.cs" t="Include" />
