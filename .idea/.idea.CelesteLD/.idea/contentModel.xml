@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+<<<<<<< Updated upstream
     <e p="C:\Users\courc\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\courc\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_CelesteLD.-1022535991.00" t="ExcludeRecursive" />
     <e p="D:\GitKraken\Unity\LD projects\CelesteLD" t="IncludeRecursive">
+=======
+    <e p="C:\Users\ronde\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ronde\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_CelesteLD.1479554395.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ronde\Desktop\Level Design 2ème année\Celeste LD\CelesteLD" t="IncludeRecursive">
+>>>>>>> Stashed changes
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AssetsMixAndJam" t="Include">
@@ -33,11 +39,22 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ActivateShield.cs" t="Include" />
+<<<<<<< Updated upstream
           <e p="CameraMenu.cs" t="Include" />
+=======
+          <e p="Cloud.cs" t="Include" />
+>>>>>>> Stashed changes
           <e p="Diamond.cs" t="Include" />
+<<<<<<< HEAD
           <e p="Menu.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
+=======
+<<<<<<< Updated upstream
+>>>>>>> main
           <e p="Pics.cs" t="Include" />
+=======
+          <e p="MovingPlateforme.cs" t="Include" />
+>>>>>>> Stashed changes
           <e p="ShieldToActivateDoor.cs" t="Include" />
           <e p="SnowBall.cs" t="Include" />
         </e>
