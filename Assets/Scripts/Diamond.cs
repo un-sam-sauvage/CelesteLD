@@ -8,11 +8,15 @@ public class Diamond : MonoBehaviour
     private bool isTaken =false;
     private float countdownToReactivate = 3f;
     public GameObject player;
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        isTaken = true;
-        //TODO changement de frame pour montrer que c'est pris
-        player.GetComponent<Movement>().hasDashed = false;
+        if (other.gameObject.GetComponent<Movement>())
+        {
+            isTaken = true;
+            //TODO changement de frame pour montrer que c'est pris
+            player.GetComponent<Movement>().hasDashed = false;
+        }
+        
     }
 
     // Update is called once per frame
