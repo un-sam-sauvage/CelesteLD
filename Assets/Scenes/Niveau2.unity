@@ -17203,7 +17203,7 @@ PrefabInstance:
     - target: {fileID: 1816810154434275695, guid: e4ff9bcdc46836f468936dc817f2a00e,
         type: 3}
       propertyPath: redCloud
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4ff9bcdc46836f468936dc817f2a00e, type: 3}
