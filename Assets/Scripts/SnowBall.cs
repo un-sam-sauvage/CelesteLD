@@ -2,24 +2,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SnowBall : MonoBehaviour
 {
     public float speed;
-
-    public Transform respawn;
-    // Update is called once per frame
+    
     void Update()
     {
         transform.Translate(Vector3.left * (Time.deltaTime * speed));
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
+  
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.position = respawn.transform.position;
-            Destroy(other.gameObject);
+            other.transform.position = FindObjectOfType<GameManager>().respawn.position;
         }
     }
 }
