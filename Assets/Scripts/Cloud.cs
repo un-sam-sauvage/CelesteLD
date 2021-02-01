@@ -1,38 +1,70 @@
-﻿using System;
+﻿using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class Cloud : MonoBehaviour
 {
-    public Animator animator;
-    public bool redCloud = false;
-    public GameObject player;
-    private bool _startCountdown = false;
+    private Animator _animator;
+
+    public bool redCloud;
+
+    private GameObject _player;
+
+    private Vector3 _scale;
+
+    private bool _startCountdown;
+    private bool _isPlayer;
+
     private float _countdown = 3f;
+    private float _jumpForce;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+        _player = GameObject.FindGameObjectWithTag("Player");
+        _jumpForce = _player.GetComponent<Movement>().jumpForce;
+        _scale = gameObject.transform.localScale;
+    }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        animator.SetBool("CloudCanMove", true);
-        player = other.gameObject;
+        _animator.SetBool("CloudCanMove", true);
+        if (other.transform.CompareTag("Player"))
+        {
+            _isPlayer = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        animator.SetBool("CloudCanMove", false);
+        _animator.SetBool("CloudCanMove", false);
+        if (other.transform.CompareTag("Player"))
+        {
+            _isPlayer = false;
+        }
     }
 
     public void BigJumpTrue()
     {
-        player.GetComponent<Movement>().jumpForce += 10;
-    }
-
-    public void BigJumpFalse()
-    {
-        player.GetComponent<Movement>().jumpForce -= 10;
+        if (_isPlayer)
+            _player.GetComponent<Movement>().jumpForce = _jumpForce + 10;
         if (redCloud)
         {
-            _startCountdown = true;
-            //TODO faire disparaître le nuage
+            StartCoroutine(ScaleCloud());
         }
+    }
+
+    IEnumerator ScaleCloud()
+    {
+        yield return new WaitForSeconds(.3f);
+        gameObject.transform.DOScale(Vector3.zero,.5f);
+        _startCountdown = true;
+    }
+    public void BigJumpFalse()
+    {
+        _player.GetComponent<Movement>().jumpForce = _jumpForce;
+
+        _animator.SetBool("CloudCanMove", false);
     }
 
     private void Update()
@@ -44,7 +76,7 @@ public class Cloud : MonoBehaviour
 
         if (_countdown <= 0)
         {
-            //TODO faire réapparaître le nuage
+            gameObject.transform.DOScale(_scale,.5f);
             _startCountdown = false;
             _countdown = 3f;
         }
