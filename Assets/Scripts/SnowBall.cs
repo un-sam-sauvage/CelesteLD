@@ -6,7 +6,8 @@ using UnityEngine;
 public class SnowBall : MonoBehaviour
 {
     public float speed;
-    
+
+    public Transform respawn;
     // Update is called once per frame
     void Update()
     {
@@ -17,6 +18,7 @@ public class SnowBall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.transform.position = respawn.transform.position;
             Destroy(other.gameObject);
         }
     }
