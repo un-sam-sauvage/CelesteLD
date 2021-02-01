@@ -36,6 +36,7 @@
           <e p="CameraMenu.cs" t="Include" />
           <e p="Cloud.cs" t="Include" />
           <e p="Diamond.cs" t="Include" />
+          <e p="End.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="MovingPlateforme.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
