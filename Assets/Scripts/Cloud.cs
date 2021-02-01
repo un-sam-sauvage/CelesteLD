@@ -24,6 +24,10 @@ public class Cloud : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         _jumpForce = _player.GetComponent<Movement>().jumpForce;
         _scale = gameObject.transform.localScale;
+        if (redCloud)
+        {
+            GetComponent<SpriteRenderer>().color = Color.red;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
