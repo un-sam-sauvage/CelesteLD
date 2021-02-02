@@ -8,6 +8,12 @@ public class Diamond : MonoBehaviour
     private bool isTaken =false;
     private float countdownToReactivate = 3f;
     public GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.GetComponent<Movement>())
