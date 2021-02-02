@@ -17,6 +17,7 @@ public class ShieldToActivateDoor : MonoBehaviour
             //TODO porte qui bouge
             Debug.Log("La porte s'ouvre");
             transform.position = Vector2.MoveTowards(move, point.position, 0.5f);
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }
