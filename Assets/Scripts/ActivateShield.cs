@@ -4,7 +4,7 @@ using UnityEngine;
 public class ActivateShield : MonoBehaviour
 {
     public GameObject player;
-    private bool _isActivated = false;
+    private bool _isActivated;
     public GameObject doorToActivate;
 
     private void Start()
@@ -14,7 +14,8 @@ public class ActivateShield : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!_isActivated)
+        Debug.Log("Nique Zebi");
+        if (other.gameObject.CompareTag("Player"))
         {
             doorToActivate.GetComponent<ShieldToActivateDoor>().nbShieldActivated++;
             _isActivated = true;
