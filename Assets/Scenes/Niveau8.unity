@@ -28562,7 +28562,7 @@ PrefabInstance:
     - target: {fileID: 4669669835166675570, guid: 30339dbbcaf6c2f4f8b1f3276c8c6474,
         type: 3}
       propertyPath: nbShieldRecquire
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5429967574434170028, guid: 30339dbbcaf6c2f4f8b1f3276c8c6474,
         type: 3}

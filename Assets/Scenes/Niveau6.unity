@@ -25021,7 +25021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 1339978286}
-  sceneNumber: 0
+  sceneNumber: 6
 --- !u!61 &1530779812
 BoxCollider2D:
   m_ObjectHideFlags: 0
