@@ -19,6 +19,7 @@ public class ActivateShield : MonoBehaviour
             doorToActivate.GetComponent<ShieldToActivateDoor>().nbShieldActivated++;
             _isActivated = true;
             player.GetComponent<Movement>().hasDashed = false;
+            Destroy(gameObject, 1f);
         }
     }
 }
