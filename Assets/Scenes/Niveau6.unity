@@ -24836,6 +24836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 1339978286}
+  sceneNumber: 0
 --- !u!61 &1530779812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24941,7 +24942,7 @@ PrefabInstance:
     - target: {fileID: 1516440920155536454, guid: d640b300f07ba01478ab56491c51bffe,
         type: 3}
       propertyPath: scene
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1516440920155536458, guid: d640b300f07ba01478ab56491c51bffe,
         type: 3}

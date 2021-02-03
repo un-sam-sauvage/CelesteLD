@@ -20738,7 +20738,7 @@ PrefabInstance:
     - target: {fileID: 1516440920155536454, guid: d640b300f07ba01478ab56491c51bffe,
         type: 3}
       propertyPath: scene
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1516440920155536458, guid: d640b300f07ba01478ab56491c51bffe,
         type: 3}
@@ -27473,6 +27473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 70451251}
+  sceneNumber: 4
 --- !u!1 &872702451
 GameObject:
   m_ObjectHideFlags: 0

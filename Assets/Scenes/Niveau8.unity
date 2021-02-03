@@ -35221,7 +35221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 70451251}
-  sceneNumber: 0
+  sceneNumber: 8
 --- !u!1001 &635825968
 PrefabInstance:
   m_ObjectHideFlags: 0
