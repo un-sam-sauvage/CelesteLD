@@ -6,6 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class SelectLevel : MonoBehaviour
 {
+    public GameObject panel;
+
+    private bool _bool;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !_bool)
+        {
+            Debug.Log("Activé");
+            panel.SetActive(true);
+            _bool = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && _bool)
+        {
+            Debug.Log("Désactivé");
+            panel.SetActive(false);
+            _bool = false;
+        }
+    }
+
     public void ChoseLevel(int levelNumber)
     {
         switch (levelNumber)

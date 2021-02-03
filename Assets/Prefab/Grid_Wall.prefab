@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6095499516586018652}
   - component: {fileID: 6095499516586018626}
   - component: {fileID: 6095499516586018653}
-  - component: {fileID: 4687209310742247025}
   - component: {fileID: 6095499516586018625}
   - component: {fileID: 6095499516586018624}
   - component: {fileID: 6095499516586018627}
@@ -2802,19 +2801,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &4687209310742247025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6095499516586018655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6318575d1d7a6c14e98449c430e5a45d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawn: {fileID: 0}
 --- !u!19719996 &6095499516586018625
 TilemapCollider2D:
   m_ObjectHideFlags: 0
