@@ -42,6 +42,7 @@
           <e p="Menu.cs" t="Include" />
           <e p="MovingPlateforme.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
+          <e p="PlayerPos.cs" t="Include" />
           <e p="Respawn.cs" t="Include" />
           <e p="SelectLevel.cs" t="Include" />
           <e p="ShieldToActivateDoor.cs" t="Include" />
