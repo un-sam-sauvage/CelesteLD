@@ -23,6 +23,11 @@ public class Playerpos : MonoBehaviour
 
     private void Update()
     {
+        if (!spawnPoint)
+        {
+            Debug.LogWarning("SpawnPoint is required");
+        }
+        
         if (isSnapped)
         {
             gameObject.transform.position = spawnPoint.transform.position + new Vector3(0, yPos, 0);
