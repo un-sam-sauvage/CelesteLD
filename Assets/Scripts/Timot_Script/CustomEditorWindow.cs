@@ -7,11 +7,11 @@ using Object = UnityEngine.Object;
 
 public class CustomEditorWindow : EditorWindow
 {
-  private Object deathZone = new GameObject("DeathZone");
+    private GameObject deathZone;
 
-  private Vector2 _pos;
-  private Object _spawnPoint_Script;
- 
+    private Transform spawnPointScript;
+    
+    private int nbSceneReload;
    [MenuItem("Window/Custom Editor")]
    public static void ShowWindow()
    {
@@ -20,14 +20,10 @@ public class CustomEditorWindow : EditorWindow
    
    private void OnGUI()
    {
-      GUILayout.Label("GameObject Create", EditorStyles.boldLabel);
-
-      deathZone = EditorGUILayout.ObjectField("DeathZone", deathZone, typeof(GameObject), true);
-     
-      _pos = EditorGUILayout.Vector2Field("Position of GameObject", _pos);
-
-      
-     EditorGUILayout.ObjectField("SpawnPoint for Script", _spawnPoint_Script, typeof(Transform), true);
+       GUILayout.Label("GameObject Create", EditorStyles.boldLabel);
+       
+       spawnPointScript = (Transform) EditorGUILayout.ObjectField("SpawnPoint for Script", spawnPointScript, typeof(Transform), true);
+      nbSceneReload = EditorGUILayout.IntField("Number of the Scene to reload when player die from deathZone", nbSceneReload);
       
       if (GUILayout.Button("Create DeathZone"))
       {
@@ -37,9 +33,10 @@ public class CustomEditorWindow : EditorWindow
 
    void CreateObject()
    {
-    GameObject gameObject = new GameObject("DeathZone");
-    gameObject.AddComponent<BoxCollider2D>();
-    gameObject.AddComponent<Respawn>();
-
+      deathZone =  new GameObject("DeathZone");
+      deathZone.AddComponent<BoxCollider2D>();
+      deathZone.AddComponent<Respawn>();
+      deathZone.GetComponent<Respawn>().respawn = spawnPointScript;
+      deathZone.GetComponent<Respawn>().sceneNumber = nbSceneReload;
    }
 }
