@@ -49,6 +49,7 @@
           <e p="Spawner.cs" t="Include" />
           <e p="Timot_Script" t="Include">
             <e p="CustomEditorWindow.cs" t="Include" />
+            <e p="Drawer.cs" t="Include" />
             <e p="PlayerPos.cs" t="Include" />
           </e>
         </e>
