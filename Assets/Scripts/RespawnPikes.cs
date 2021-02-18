@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Respawn : MonoBehaviour
+public class RespawnPikes : MonoBehaviour
 {
-    public Transform respawn;
+    public GameObject respawn;
     public int sceneNumber;
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -17,7 +16,13 @@ public class Respawn : MonoBehaviour
         }
     }
 
+    public void ClearRespawnPoint()
+    {
+        respawn = null;
+    }
 
-
-  
+    public void AddRespawnPoint()
+    {
+        respawn = GameObject.FindGameObjectWithTag("spawn");
+    }
 }
